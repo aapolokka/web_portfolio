@@ -11,6 +11,6 @@ async function updateCounter() {
         "https://2vbkuod2k5v43uztsrsixdqkqq0jxyeq.lambda-url.us-east-1.on.aws/"
     );
     let data = await response.json();
-    counter.innerHTML = `Copyright &#169; 2023 Aapo Lokka. All Rights Reserved. pieni testi | Total views: ${data}`;
+    counter.innerHTML = `Copyright &#169; 2023 Aapo Lokka. All Rights Reserved. | Total views: ${data}`;
 }
 updateCounter();
