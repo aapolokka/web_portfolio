@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokka Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">AL</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">AL</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/cv_circle.png" alt="Aapo Lokka profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello World, I'm</p>
+          <h1 class="title">Aapo Lokka</h1>
+          <p class="section__text__p2">Future Data Scientist, <br> Data Analyst, or Computational Chemist</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/CV.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.svg"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/aapo-lokka/'"
+            />
+            <img
+              src="./assets/github.svg"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/aapolokka'"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about_pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              I am Aapo Lokka, a curious individual dedicated to enhancing the quality of human life through the applications of data science and machine learning. My primary interests are health technology, data science, and artificial intelligence. Proficient in various machine learning techniques, including regressions and convolutional neural networks, I leverage these skills to drive innovative solutions. In addition, I have a passion for computational and physical chemistry. This multidisciplinary approach allows me to explore the intersection of technology and chemistry, paving the way for novel advancements.
+<br><br>
+As a person, I have analytical thinking, responsibility, and a goal-oriented mindset. My personal goal is to embrace lifelong learning. This commitment fuels my journey in staying alongside of the latest developments and continually expanding my knowledge base.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/career.svg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p><br>4/2022-12/2023<br>Thesis Worker<br>
+                Computational Chemistry/Data Science<br><br> 
+                2020-2021<br>Research Assistant<br>
+                Computational Chemistry/Data Science <br>
+                <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2023/CP/D3CP02173D" id="actual-link">Research paper</a></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.svg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p><br>B.Sc. Bachelors Degree<br><br>M.Sc. Masters Degree (Graduating Soon)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languagest</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Advanced&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R</h3>
+                  <p>Advanced&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Basic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WSL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project One -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+              src="./assets/text_project.png" 
+              alt="Project 1" 
+              class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Text summarization</h2>
+            <p>Project, where Natural Language Processing (NLP) techniques were used 
+              to create text summarization.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://github.com/aapolokka/text_summarization'">
+                Github
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project Two -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+              src="./assets/rent_project.png" 
+              alt="Project 2" 
+              class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Rental properties of top 10 largest cities in Finland</h2>
+            <p>Project, where web scraping technology was used to scrape the data of 
+              Finnish rental properties from the website "vuokraovi.com" to create a Power BI 
+              dashboard of the top 10 largest cities in Finland.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://github.com/aapolokka/rent_project'">
+                Github
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project Three -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+              src="./assets/traffic_project.png" 
+              alt="Project 3" 
+              class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Traffic Sign Recognition using Convolutional Neural Networks</h2>
+            <p>Project that focused on the traffic sign recognition performance using three different 
+              convolutional neural network (CNN) architectures (LeNet, AlexNet, and VGGNet).</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://github.com/aapolokka/traffic_sign_recognition'">
+                Github
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project Four -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+              src="./assets/MRI_project.png" 
+              alt="Project 4" 
+              class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">School project: MRI modality conversion tool</h2>
+            <p>This group project is used to convert brain MRI images 
+              from T1-weighted images to T2-weighted images, and vice versa. 
+              The used model is Conditional Generative Adversarial Net (cGAN). 
+              My part was to create and train a working cGAN-model.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://github.com/aapolokka/mri-modality-conversion'">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.svg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:aapo.lokka@gmail.com">aapo.lokka@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="counter-number">
+        <p>Couldn't read the counter</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
